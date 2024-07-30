@@ -34,10 +34,17 @@ export function showNotification(message, type = 'success') {
   });
 }
 
+export function clearGallery() {
+  const gallery = document.getElementById('gallery');
+  gallery.innerHTML = '';
+}
+
 export function showLoader() {
-  document.getElementById('loader').hidden = false;
+  const loader = document.getElementById('loader');
+  loader.hidden = false;
 }
 
 export function hideLoader() {
-  document.getElementById('loader').hidden = true;
+  const loader = document.getElementById('loader');
+  loader.hidden = true;
 }
